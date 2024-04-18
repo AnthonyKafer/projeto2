@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 67.5%;
+}
+:root{
+/*Primarys*/
+    --colorPrimaryCyan:  hsl(174, 77%, 80%);
+    --colorPrimaryStrongCyan:  hsl(174, 86%, 45%);
+    --colorPrimaryGrayishRed: hsl(14, 92%, 95%);
+    --colorPrimaryLightRed: hsl(15, 100%, 70%);
+    --coloPrimaryPaleBlue: hsl(226, 100%, 87%);
+
+/*Neutrals*/
+    --NeutralWhite: #ffffff;
+    --NeutralVeryPaleBlue: hsl(230, 100%, 99%);
+    --NeutralGrayishBlue: hsl(224, 65%, 95%);
+    --NeutralLightGrayishBlue: hsl(223, 50%, 87%);
+    --NeutralBlue: hsl(225, 20%, 60%);
+    --NeutralDarkDesaturatedBlue: hsl(227, 35%, 25%);
+
+/*Typography*/
+    --font-size: 3rem;
+    --Family: font-family:"Manrope", sans-serif;
+}
+
+body{
+    font-family: "Manrope", sans-serif;
+    background-color: var(--NeutralWhite);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: min(60rem, 95%);
+    height: 40rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#textcontent{
+    text-align: center;
+    margin-bottom: 5rem;
+    background-image: url(pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#textcontent p{
+    margin-top: 0.8rem;
+}
+
+#preco{
+    margin-top: -20px;
+    font-size: 30px;
+}
+
+#textcontent h1{
+    font-size: var(--font-size);
+    font-family: var(--Family);
+}
+#card{
+    height: max(35rem);
+    background-color: var(--NeutralWhite);
+    padding: 4rem;
+    box-shadow: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.308);
+    border-radius: 0.8rem;
+}
+
+#content{
+    background-color: var(--NeutralWhite);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#range{
+    background-color: var(--NeutralWhite);
+    height: 50px;
+    display: flex;
+}
+
+#rangeinput{
+    position: relative;
+    left: 10%;
+    width: 80%;
+}
+
+#inputcheck{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem
+}
+
+#infos{
+    background-color: transparent;
+    width: 100%;
+    height: min(8rem);
+    display: flex;
+    padding: 2rem;
+}
+
+#trialbutton{
+    display: flex;
+}
+
+#botao{
+    width: 15rem;
+    height: 100%;
+    border-radius: 2rem;
+    position: relative;
+    left: 250px;
+    top: 5px;
+    background-color: var(--NeutralDarkDesaturatedBlue);
+    color: var(--NeutralWhite);
+}
+
+#lista{
+    color: black;
+}
+
+#section{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-top-style: solid;
+    justify-content: center;
+    color: var(--NeutralVeryPaleBlue);
+}
